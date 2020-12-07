@@ -41,9 +41,7 @@ let score = 0;
 const $button = document.getElementsByTagName('button')
 let buttonLength = $button.length;
 
-
-// 上４行をまとめてwhile文でリファクタリングしている
-// textContentで文章を上書きしているquestionは定義した関数
+// textContentで文章を上書きしている
 //setupQuizでクイズの問題文、選択肢を定義処理
 const setupQuiz = () => {
   document.getElementById('js-question').textContent = quiz[quizIndex].question;
